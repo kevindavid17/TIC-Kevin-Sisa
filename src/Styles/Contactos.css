@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactosView {
+    margin-top: 7rem;
+
+}
+
+.sectionContacts .container{
+    width: 80%;
+}
+.sectionContacts .container .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionContacts .container .card::before {
+    top: -3.125rem;
+    height: 0;
+    width: 150%;
+    content: "";
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    background-color: #192E5B;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.sectionContacts .container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+    width: 17.5rem;
+    height: 20rem;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #192E5B;
+}
+
+.sectionContacts .container .card:hover::before {
+    height: 9.375rem;
+}
+
+.sectionContacts .container .card .inner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sectionContacts .container .card .img-container {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-bottom: 1.875rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.sectionContacts .container .card:hover .img-container {
+    border: 10px solid #192E5B;
+}
+
+.sectionContacts .container .card .img-container img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.sectionContacts .container .card:hover .img-container img {
+    box-shadow: 0 0 0 14px #F2A104;
+    transform: scale(0.8);
+}
+
+.sectionContacts .container .card h3 {
+    margin-bottom: .3125rem !important;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.sectionContacts .container .card .designation {
+    letter-spacing: .125rem;
+    font-size: 0.85rem;
+    pointer-events: none;
+    
+}
+
+.sectionContacts .container .card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-in-out;
+    background-color: #192E5B;
+    transform: translateY(6.25rem);
+}
+
+.sectionContacts .container .card:hover ul {
+    transform: translateY(2.5rem);
+}
+
+.sectionContacts .container .card ul li {
+    padding: .3125rem .5rem;
+    transition: all 0.5s;
+}
+
+.sectionContacts .container .card ul li a {
+    color: #FFF;
+}
+
+.sectionContacts .container .card ul li:hover {
+    background: #F2A104;
+}
+
+.sectionContacts .container .card ul li:hover a {
+    color: #FFF;
+}

@@ -1,0 +1,77 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.Container{
+    background: white;
+    /*background: rgb(230, 227, 227);*/
+
+    padding: 0 1.25rem 0 1.25rem;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+div.main .row{
+    width: 56.25rem;
+    height: 34.375rem;
+    border-radius: 10px;
+    /*background: #fff;*/
+    background: #192E5B;
+    /*box-shadow: .3125rem .3125rem .625rem .0625rem rgb(34,139,34);*/
+    box-shadow: .3125rem .3125rem .625rem .0625rem white;
+}
+
+div.main .side-image{
+    background-image: url("../Images/AQS\ Logo.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+div.main img{
+    width: 2.1875rem;
+    position: absolute;
+    top: 1.875rem;
+    left: 1.875rem;
+    
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@media only screen and (max-width: 48rem){
+    div.main .side-image{
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0.2rem solid rgb(230, 227, 227);
+        background-size: contain;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+    /*
+    div.main img{
+        width: 2.1875rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 47%;
+    }*/
+    /*
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }*/
+    div.main .row{
+        max-width: 26.25rem;
+        width: 100%;
+    }
+}
+

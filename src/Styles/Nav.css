@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-nav{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;     
+}
+
+div.container-nav .fixed-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-size: 1.2rem;
+    background: #192E5B;
+    padding: 0 1.875rem;
+    width: 100%;
+    height: 5rem;
+    /*transform: translate(-50%);*/
+}
+.logoNav{
+    align-items: center;
+}
+
+.logo{
+    height: 4rem;
+    width: 4rem;
+    background-image: url("../Images/AQS\ Logo.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nav-links{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: .625rem;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    white-space: nowrap;
+}
+.user-text{
+    margin: 0;
+    color: white;
+    padding: 0.7rem 1rem;
+}
+.linkItem{
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+}
+.linkItem:hover{
+    /*background: #F2A104;*/
+    background: white;
+    border-radius: .25rem;
+    color:#192E5B;
+    transition: all 0.2s ease-in-out;
+}
+.fixed-top .nav-links i {
+    font-size: large;
+    padding-right: 0.4rem;
+}
+.bi-list{
+    color:white;
+    font-size: x-large;
+}
+.bi-x-lg{
+    color:white;
+    font-size: x-large;
+}
+.fixed-top .menu-links{
+    display: none;
+}
+
+@media screen and (max-width: 75rem){
+    .fixed-top{
+        z-index: 99;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background:white;
+        box-shadow: 0 .5rem 2rem 0 rgba(31, 38, 135, .37);
+        backdrop-filter: blur(.25rem);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 5rem;
+        left: -110%;
+        margin: 0;
+        align-items: stretch;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        overflow-y: auto; 
+    }
+    .nav-links.active{
+        left: 0%;
+    }
+    .user-text{
+        display: block;
+        widows: 100%;
+        padding: 2rem 0;
+        color: #192E5B;
+        font-weight: bolder;
+    }
+    .linkItem{
+        display: block;
+        widows: 100%;
+        padding: 2rem 0;
+        color: #192E5B;
+        font-weight: bold;
+    }
+    .fixed-top .menu-links{
+        display:block;
+    }
+    .linkItem:hover{
+        /*background: #F2A104;*/
+        background: #F2A104;
+    }
+}
+

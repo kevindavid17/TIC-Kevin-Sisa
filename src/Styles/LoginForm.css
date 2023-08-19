@@ -1,0 +1,106 @@
+.formLogin{
+    width: 20.625rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.formLogin header{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 .625rem 0 .625rem;
+    
+}
+.formLogin .input-field label{
+    top: .625rem;
+    left: .625rem;
+    pointer-events: none;
+}
+.formLogin .bi-envelope-at-fill{
+    margin-right: 0.4rem;
+}
+.formLogin .bi-key-fill{
+    margin-right: 0.4rem;
+}
+.formLogin .sectionPassword{
+    position: relative;
+}
+.formLogin .bi-eye-fill{
+    position: absolute;
+    top: 0.5rem;
+    left: 18.4rem;
+}
+.formLogin .input{
+    height: 2.8125rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: .125rem solid #F2A104;
+    outline: none;
+    margin-bottom: 1.25rem;
+    color: #F2A104;
+}
+.formLogin .inputResetPassword{
+    height: 2.8125rem;
+    width: 70%;
+    background: transparent;
+    border: none;
+    border-bottom: .125rem solid #F2A104;
+    outline: none;
+    margin-bottom: 1.25rem;
+    color: #F2A104;
+}
+.formLogin .input:-webkit-autofill{
+    text-decoration: none;
+}
+.formLogin .txtError{
+    color: white;
+    text-align: center;
+    background: #C1403D;
+    margin-left:.625rem;
+    margin-right: .625rem;
+}
+
+.formLogin .btnsubmit{
+    background: #192E5B;
+    border: solid 2px white;
+    color:white;
+}
+.formLogin .btnsubmit:hover{
+    background: #00743F;
+    border: solid 2px #00743F;
+    color: white;
+}
+.formLogin .btnNuevaCuenta{
+    background: #192E5B;
+    border: solid 2px white;
+    color: white;
+}
+.formLogin .btnNuevaCuenta:hover{
+    background: #F2A104;
+    border: solid 2px #F2A104;
+    color: white;
+}
+.formLogin .forgotPassword{
+    text-align: end;
+}
+.formLogin .btnResetPassword{
+    background-color: #192E5B;
+    border: none;
+    font-size: smaller;
+}
+.formLogin .btnResetPassword:hover{
+    color:#F2A104;
+}
+.formLogin .signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 1.25rem;
+}
+
+

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.graphics{
+    margin-top: 7rem;
+}
+.graphics .title{
+    background: #192E5B;
+    padding: 0.8rem;
+    text-align: center;
+    color:white;
+    border-radius: 0.8rem;
+    /*box-shadow: .3125rem .3125rem .625rem #515B51;*/
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+.graphics .title h3{
+    margin: 0;
+}
+.graphics .recharts-responsive-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 0.8rem;
+    padding: 2rem 0 2rem 0;
+    border: solid 1.5px #192E5B;
+}
+.legend-item-2{
+    display:none;
+}
